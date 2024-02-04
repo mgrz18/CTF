@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bandit0.md",
+                "file": "Bandit/Bandit0.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bandit0.md",
+                "file": "Bandit/Bandit0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bandit0.md",
+                "file": "Bandit/Bandit0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bandit0.md"
+                "file": "Bandit/Bandit0.md"
               }
             }
           }
@@ -146,9 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acaff76b6ad92c8c",
+  "active": "850df6c4cd620e16",
   "lastOpenFiles": [
-    "Bandit0.md",
+    "Bandit/Bandit0.md",
     "Bandit"
   ]
 }

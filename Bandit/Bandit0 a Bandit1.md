@@ -1,4 +1,4 @@
-### Bandit0
+### Bandit0 -> Bandit1
 
 ### Objetivo
 El reto de este nivel es obtener la contraseña para el siguiente nivel (bandit1) almacenada en un archivo llamado README ubicado en el directorio de inicio.

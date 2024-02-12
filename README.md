@@ -1,3 +1,5 @@
+# Fundamentos de ciberseguridad
+
 ```
  ____        ______      ____           
 /\  _`\     /\__  _\    /\  _`\         Bandit
@@ -5,9 +7,19 @@
  \ \ \/_/_     \ \ \     \ \  _\/       
   \ \ \L\ \     \ \ \     \ \ \/        
    \ \____/      \ \_\     \ \_\ 
-    \/___/        \/_/      \/_/ 
+    \/___/        \/_/      \/_/        Miguel Angel García R.
 ```                                 
  
-Este repositorio almacena las soluciones a todos los CTFs que resuelva durante las clases de ciberseguridad.
 
-> Miguel Angel García R.
+
+### Retos bandit
+- bandit0
+- bandit1
+- bandit2
+- bandit3
+- bandit4
+- bandit5
+- bandit6
+- bandit7
+- bandit8
+- bandit9

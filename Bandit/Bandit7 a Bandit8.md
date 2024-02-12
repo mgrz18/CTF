@@ -14,10 +14,6 @@ bandit7@bandit:~$ ls
 data.txt
 bandit7@bandit:~$ grep millionth data.txt
 millionth       TESKZC0XvTetK0S9xNwm25STk5iWrBvP
-bandit7@bandit:~$ grep -A1 millionth data.txt
-millionth       TESKZC0XvTetK0S9xNwm25STk5iWrBvP
-Roderick's      zbqXMhsLoFPqc2Mf0TJwI7H6KXp75PSi
-bandit7@bandit:~$
 bandit7@bandit:~$
 ```
 

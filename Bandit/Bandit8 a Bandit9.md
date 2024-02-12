@@ -5,24 +5,20 @@ La contraseña para el siguiente nivel se almacena en el archivo data.txt y es l
 ### Datos de acceso
 - Puerto: 2220
 - Dirección: bandit.labs.overthewire.org
-- Contraseña: zbqXMhsLoFPqc2Mf0TJwI7H6KXp75PSi
+- Contraseña: TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 - Usuario: bandit8
 ### Solución
 
 ```bash
-bandit7@bandit:~$ ls
+bandit8@bandit:~$ ls
 data.txt
-bandit7@bandit:~$ grep millionth data.txt
-millionth       TESKZC0XvTetK0S9xNwm25STk5iWrBvP
-bandit7@bandit:~$ grep -A1 millionth data.txt
-millionth       TESKZC0XvTetK0S9xNwm25STk5iWrBvP
-Roderick's      zbqXMhsLoFPqc2Mf0TJwI7H6KXp75PSi
-bandit7@bandit:~$
-bandit7@bandit:~$
+bandit8@bandit:~$ sort data.txt | uniq -u
+EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+bandit8@bandit:~$
 ```
 
 ### Notas adicionales
 
-
+El argumento -u sirve para restringir las palabras a mostrar solo las ocurrencias únicas y repetidas
 
 ### Referencias

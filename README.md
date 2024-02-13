@@ -23,3 +23,5 @@
 - bandit7
 - bandit8
 - bandit9
+- bandit10
+- bandit11

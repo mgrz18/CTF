@@ -13,4 +13,4 @@
 
 
 ### Retos bandit
-- bandit0 bandit22
+- bandit0 al bandit22

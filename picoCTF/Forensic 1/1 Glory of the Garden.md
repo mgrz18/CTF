@@ -27,9 +27,6 @@ vim garden.jpg
 
 Después podemos observar que en la última linea se encuentra la bandera que estamos buscando
 
-## Bandera
-picoCTF{more_than_m33ts_the_3y33dd2eEF5}
-
 ## Notas
 
 ## Referencias

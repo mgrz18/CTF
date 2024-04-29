@@ -6,71 +6,54 @@ Additional details will be available after launching your challenge instance.
 (None)
 
 ## Solución
-
-
+Vamos a utilizar el código proporcionado llamado chal.py, pero corregido a lo que de verdad está buscando resolver el reto, quedando así:
 ```python
-from Crypto.Util.number import getPrime, inverse, bytes_to_long
+from Crypto.Util.number import isPrime, long_to_bytes
 from string import ascii_letters, digits
-from random import choice
+from itertools import combinations
+from sympy import divisors
+from math import log2
 
-pride = "".join(choice(ascii_letters + digits) for _ in range(16))
-gluttony = getPrime(128)
-greed = getPrime(128)
-lust = gluttony * greed
+anger = int(input("anger = "))
+envy = int(input("envy = "))
 sloth = 65537
-envy = inverse(sloth, (gluttony - 1) * (greed - 1))
 
-anger = pow(bytes_to_long(pride.encode()), sloth, lust)
+ds = divisors(envy * sloth - 1)
+primes = [x + 1 for x in ds if isPrime(x + 1)]
+correct_size_primes = [x for x in primes if log2(x) // 1 == 127]
 
-print(f"{anger = }")
-print(f"{envy = }")
+valid_plaintexts = []
+charset = ascii_letters + digits
+for p, q in combinations(correct_size_primes, 2):
+    try:
+        s = long_to_bytes(pow(anger, envy, p * q)).decode("ascii")
+        if all([c in charset for c in s]):
+            valid_plaintexts.append(s)
+    except Exception:
+        continue
 
-print("vainglory?")
-vainglory = input("> ").strip()
-
-if vainglory == pride:
-    print("Conquered!")
-    with open("/challenge/flag.txt") as f:
-        print(f.read())
-else:
-    print("Hubris!")
-```
-Este código está modificado, como podemos observar, el código corredigo se vería como el siguiente:
-
-```python
-from Crypto.Util.number import getPrime, inverse, bytes_to_long
-from string import ascii_letters, digits
-from random import choice
-
-
-m = "".join(choice(ascii_letters + digits) for _ in range(16))
-p = getPrime(128)
-q = getPrime(128)
-n = p * q
-e = 65537
-d = inverse(e, (p - 1) * (q - 1))
-
-
-c = pow(bytes_to_long(m.encode()), e, n)
-
-
-print(f"{c = }")
-print(f"{d = }")
-
-
-print("m?")
-in = input("> ").strip()
-
-
-if in == m:
-    print("Conquered!")
-    with open("/challenge/flag.txt") as f:
-        print(f.read())
-else:
-    print("Hubris!")
-
+print(valid_plaintexts)
 ```
 
+Donde la ejecución del código y del reto se verían de la siguiente forma.
+```powershell
+C:\Users\mgarcia\Desktop\ctf>ncat saturn.picoctf.net 54700
+anger = 46390800763544930736700170661463720160209822175372651655602195464710651054637
+envy = 33069474929757624307540487509432186917414609007785419966180784931003272514865
+vainglory?
+> fWMXBCG5LQAFwP66
+fWMXBCG5LQAFwP66
+Conquered!
+picoCTF{7h053_51n5_4r3_n0_m0r3_38268294}
+```
+
+```bash
+mrfear@nightmare ~/winhome/Desktop/ctf % python sra.py
+anger = 46390800763544930736700170661463720160209822175372651655602195464710651054637
+envy = 33069474929757624307540487509432186917414609007785419966180784931003272514865
+['fWMXBCG5LQAFwP66']
+mrfear@nightmare ~/winhome/Desktop/ctf %
+```
 
 ## Notas
 

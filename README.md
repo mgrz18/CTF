@@ -9,5 +9,4 @@
    \ \____/      \ \_\     \ \_\ 
     \/___/        \/_/      \/_/        Miguel García
 ```                                 
-<img src="https://media1.tenor.com/m/VrzXhtoSwcsAAAAd/hacker-typing.gif" width="40" height="40" />
-<img src="https://media.tenor.com/McPQygGOuXYAAAAi/gladgers-hacker-gers-guardians-of-galaxy.gif" width="40" height="40" />
+<img src="https://media1.tenor.com/m/VrzXhtoSwcsAAAAd/hacker-typing.gif" width="100" height="80" />
